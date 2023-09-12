@@ -1,0 +1,1 @@
+console.log('Hello, World Javascrip vindo do Arquivo script.js')
