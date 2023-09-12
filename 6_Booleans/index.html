@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 - Boleans</title>
+    <script src="script.js"></script>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px ;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Boleans</h1>
+    <ul>
+        <li>Serve para guardar um valor de uma comparação. Por exemplo:</li>
+        <li>Os únicos valores possíveis são: True (Verdadeiro) ou False (Falso)</li>
+        <li>console.log(5 > 2)</li>
+        <li>console.log(5 < 2)</li>
+        <li>console.log('Mauricio' == 'Mauricio')</li>
+        <li>console.log('Mauricio' == 'Rodrigues')</li>
+    </ul>
+    <hr>
+    <h2>Booleans: Comparações</h2>
+    <ul>
+        <li>Maior que: ></li>
+        <li>Menor que: <</li>
+        <li>Maior ou igual: >=</li>
+        <li>Menor ou igual: <=</li>
+        <li>Igual: ==</li>
+        <li>Diferente: !=</li>
+        <li>Idêntico: ===</li>
+    </ul>
+    <hr>
+    <h2>Booleans: Operadores Lógicos</h2>
+    <ul>
+        <li>Por meio de uma comparação resultam em um Boolean</li>
+        <li>&& - and -> para ser True, os dois 'lados' da comparação
+            precisam ser True
+        </li>
+        <li>|| - or -> para ser True, basta um dos 'lados' da comparação ser True</li>
+        <li>!- not -> inverter os valores (True vira False)</li>
+    </ul>
+    <h3>Exemplo</h3>
+    <ul>
+        <li>&& - and</li>
+        <li>|| - or</li>
+        <li>! - not</li>
+    </ul>
+    <table>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>A and B</th>
+            <th>A or B</th>
+            <th>not A</th>
+        </tr>
+        <tr>
+            <td>False</td>
+            <td>False</td>
+            <td>False</td>
+            <td>False</td>
+            <TD>True</TD>
+        </tr>
+        <tr>
+            <td>False</td>
+            <td>True</td>
+            <td>False</td>
+            <td>True</td>
+            <TD>True</TD>
+        </tr>
+        <tr>
+            <td>True</td>
+            <td>False</td>
+            <td>False</td>
+            <td>True</td>
+            <TD>False</TD>
+        </tr>
+        <tr>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+            <TD>False</TD>
+        </tr>
+    </table>
+    <hr>
+    <h2>Booleans: Operadores lógicos exemplos</h2>
+    <ul>
+        <li>console.log(true && true)</li>
+        <li>console.log(true && false)</li>
+        <li>console.log(false && false)</li>
+        <li>console.log(!true)</li>
+    </ul>
+    <hr>
+    <h2>Booleans: operador ternário</h2>
+    <ul>
+        <li>Faz um comparativo em apenas uma linha de código</li>
+        <li>console.log(true ? 1 : 2)</li>
+        <li>console.log(false ? 'falso': 'verdadeiro')</li>
+        <li>Não é muito utilizado e pode deixar o código complicado de ler.</li>
+    </ul>
+</body>
+</html>
