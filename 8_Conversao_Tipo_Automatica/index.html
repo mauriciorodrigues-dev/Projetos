@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8 - Conversão de Tipo Automática</title>
+    <script src="script.js"></script>
+    <style>
+      ul li {
+        margin-bottom: 10px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      strong {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Conversão de Tipo Automática</h1>
+    <ul>
+      <li>
+        O JavaScript, em determinadas operações, converte silenciosamente o tipo
+        do resultado final da operação, veja:
+      </li>
+      <li>console.log(5*null) // 0</li>
+      <li>console.log('5'- 3) // 2</li>
+      <li>console.log('5'+ 1) // 51</li>
+      <li>console.log('dois'* 'três') // NaN</li>
+    </ul>
+  </body>
+</html>
