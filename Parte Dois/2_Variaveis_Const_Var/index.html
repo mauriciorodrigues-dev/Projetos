@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variáveis Const e Var</title>
+    <script src="script.js"></script>
+    <style>
+      code {
+        margin-left: 50px;
+      }
+
+      #stop {
+        background-color: blue;
+        padding: 10px;
+        color: #fff;
+        border-radius: 10px;
+      }
+      strong {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Variáveis Const e Var</h2>
+    <code>var nome = 'Mauricio'</code><br />
+    <code>const ip = '127.5.5.21'</code><br />
+    <code>console.log('O seu nome é ' + nome + ' e seu Ip é ' + ip)</code
+    ><br /><br />
+    <hr />
+    <h2>Convenção no nome das variáveis</h2>
+    <ul>
+      <li>Não pode Começar com um número (let 2teste)</li>
+      <li>Mas pode terminar com número (let teste9 = 'testando')</li>
+      <li>
+        Pode ter <strong>$</strong> ou <strong>_</strong>, mas não outros
+        caracteres especiais (let $nome, _nome)
+      </li>
+      <li>mas não pode ter caracteres especiais (let @teste)</li>
+      <li>Podemos iniciar com letra Maiúscula (let Nome = 'Mauricio')</li>
+      <li>Ou usar camelCase (let meuPrimeiroNome = 'Mauricio')</li>
+    </ul>
+    <code>codelet nome3 = 'teste - 1'</code><br />
+    <code>codeconsole.log(nome3)</code><br /><br />
+    <code>codelet $nome = 'teste - 2'</code><br />
+    <code>codeconsole.log($nome)</code><br /><br />
+    <code>codelet _nome = 'teste - 3'</code><br />
+    <code>codeconsole.log(_nome)</code><br /><br />
+    <code>codelet Nome = 'teste - 4'</code><br />
+    <code>codeconsole.log(Nome)</code><br /><br />
+    <code>codeet NomeTesteHoje = 'Teste - 5'</code><br />
+    <code>codeconsole.log(NomeTesteHoje)</code><br /><br />
+    <hr />
+    <h2>Nomes de Variáveis reservados</h2>
+    <ul>
+      <li>
+        Alguns nomes não podem ser utilizados para iniciar variáveis, veja:
+      </li>
+      <li id="stop">
+        break case catch class const continue debugger default delete do else
+        enum export extends false finally for function if implements import
+        interface in instanceof let new package private protected public return
+        static super switch this throw true try typeof var void while with yield
+      </li>
+      <li>Ex: let break = 'parar'</li>
+      <li>Porém podemos usar elas + alguma palavra/dígito:</li>
+      <li>Ex: let breakMauricio = 1</li>
+    </ul>
+    <code>let <strong>if</strong> = 'Teste If' - erro</code><br />
+    <code>let <strong>with</strong> = 'Teste with - erro</code><br /><br />
+    <code>let case1 = 'Teste Correto'</code><br />
+    <code>console.log(case1)</code><br /><br />
+    <code>let classNumeral = 1222</code><br />
+    <code>console.log(classNumeral)</code><br /><br />
+  </body>
+</html>
