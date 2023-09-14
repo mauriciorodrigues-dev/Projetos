@@ -6,6 +6,9 @@
     <title>Estrutura de Repetição</title>
     <script src="script.js"></script>
     <style>
+      body {
+        height: 500vh;
+      }
       code {
         margin-left: 50px;
         /* border: 1px solid; */
@@ -16,7 +19,7 @@
 
       .ex {
         border: 1px solid;
-        width: 250px;
+        width: 450px;
         padding: 10px;
         margin-right: 10px;
       }
@@ -90,5 +93,82 @@
       <li>Semelhante ao wile, porém amplamente utilizado</li>
       <li>Estrutura de repetição mais fácil de compreender</li>
     </ul>
+    <code>for (let numero = 2; numero < 100; numero = numero * 2) {</code><br />
+    <code>console.log('O número é ' + numero)</code><br />
+    <code>}</code><br />
+    <code>for (let i = 0; i < 100; i = i + 15) {</code><br />
+    <code>console.log(`A soma de i com 2 é: ${1 + 2}`)</code><br />
+    <code>}</code><br /><br />
+    <hr />
+    <h2>Forçando a saída de um loop: break</h2>
+    <ul>
+      <li>
+        As vezes precisamos parar o loop antes que complete todo seu ciclo
+      </li>
+      <li>Para isso, utilizamos o <strong>break</strong></li>
+    </ul>
+    <div class="ex">
+      <code>for(let i = 5; i < 20; i = i + 1){</code><br />
+      <code>if(i % 10 == 0) {</code><br />
+      <code>console.log('Saiu do loop')</code><br />
+      <code>break;</code><br />
+      <code>}</code><br />
+      <code>console.log('Prosseguindo o loop')</code><br />
+      <code>}</code>
+    </div>
+    <br />
+    <code>let nome = 'Mauricio'</code><br />
+
+    <code>for(let i = 0; i < 10; i = i + 1){</code><br />
+
+    <code>if(i == 3){</code><br />
+    <code>nome='Mauricio Rodrigues'</code><br />
+    <code>}</code><br />
+    <code>if(i == 8 && nome == 'Mauricio Rodrigues') {</code><br />
+    <code>console.log('O nome é ' + nome + ', pode parar')</code><br />
+    <code>break</code><br />
+    <code>}</code><br />
+    <code>console.log(i)</code><br />
+    <code>}</code><br /><br />
+    <br />
+    <hr />
+    <h2>Pulando uma execução do loop: continue</h2>
+    <ul>
+      <li>Dependendo da nossa lógica, podemos pular o resto da execução</li>
+      <li>Para isso, utilizamos a palavra <strong>continue</strong></li>
+    </ul>
+    <div class="ex">
+      <code>let x = 0</code><br />
+      <code>while(x < 11) {</code><br />
+      <code>x = x + 1</code><br />
+      <code>if( x % 2 == 0) {</code><br />
+      <code><strong>continue;</strong></code
+      ><br />
+      <code>}</code><br />
+      <code>console.log(x)</code><br />
+      <code>x = x + 1</code><br />
+      <code>}</code><br /><br />
+    </div>
+    <code>for(let i = 10; i > 0; i = i - 1){</code><br />
+
+    <code>if(i % 2 == 0){</code><br />
+    <code>console.log('Caiu no continue')</code><br />
+    <code>continue</code><br />
+    <code>}</code><br />
+    <code>console.log(i)</code><br />
+    <code>}</code><br /><br />
+
+    <br>
+    <hr>
+    <h2>Incrementando a variável: forma fácil</h2>
+    <ul>
+      <li>Podemos incrementar uma variável de forma mais fácil: x +=1;</li>
+      <li>Ou até mesmo x++</li>
+    </ul>
+    <div class="ex">
+      <code>for (let numero = 0; numero < 10; numero += 1){</code>br
+        <code>console.log('O número é: '+ numero)</code><br>
+      <code>}</code><br><br>
+    </div>
   </body>
 </html>

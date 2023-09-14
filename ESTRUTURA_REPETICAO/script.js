@@ -1,7 +1,15 @@
-for (let numero = 2; numero < 100; numero = numero * 2) {
-    console.log('O número é ' + numero)
+let numero = 5
+
+while (numero < 50) {
+    console.log(numero)
+
+    numero += 10
 }
 
-for (let i = 0; i < 100; i = i + 15) {
-    console.log(`A soma de i com 2 é: ${1 + 2}`)
+for(let i = 0; i < 10; i++) {
+    console.log('O i é '+ i)
+}
+
+for(let i = 10; i > 0; i--) {
+    console.log('O i é '+ i)
 }
