@@ -62,3 +62,17 @@ if(nome != undefined && nome == 'Lucas'){
     console.log('Não é Mauricio')
 }
 
+// IMC
+let peso1 = 86.9
+let altura1 = 1.7
+let result = peso1/(altura1*altura1)
+console.log(result)
+if(result <= 18.6){
+    console.log(`Abaixo do Peso. Seu Imc é de ${result}`)
+}else if(result <=29.9){
+    console.log('Peso Normal')
+}else{
+    console.log('Acima do Peso')
+}
+
+

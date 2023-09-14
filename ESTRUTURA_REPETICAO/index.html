@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estrutura de Repetição</title>
+    <script src="script.js"></script>
+    <style>
+      code {
+        margin-left: 50px;
+        /* border: 1px solid; */
+      }
+      #tab {
+        margin-left: 70px;
+      }
+
+      .ex {
+        border: 1px solid;
+        width: 250px;
+        padding: 10px;
+        margin-right: 10px;
+      }
+
+      .cont-exemplo {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Estrutura de Repetição</h1>
+    <h2>O que são estruturas de Repetição?</h2>
+    <ul>
+      <li>A ideia é repetir uma ação até atingir uma condição</li>
+      <li>
+        Ao invés de repetirmos o mesmo código várias vezes, criamos um statement
+        que fará uma checagem em cada loop
+      </li>
+      <li>Também chamada de loop</li>
+    </ul>
+    <br />
+    <hr />
+    <h2>Estruta de Repetição: while</h2>
+    <ul>
+      <li>Fará uma ação, até que a condição seja atingida</li>
+      <li>
+        Precisamos realmente 'definir um fim' para o loop, caso contrário,
+        ocorrerá o problema de 'loop infinito'
+      </li>
+    </ul>
+    <p>Exemplo:</p>
+    <div class="cont-exemplo">
+      <div class="ex">
+        <code>let x = 10</code><br /><br />
+        <code>while(x > 0) {</code><br />
+        <code>console.log(x)</code><br />
+        <code id="tab">x = x -1</code><br />
+        <code>}</code><br /><br />
+      </div>
+      <div class="ex">
+        <code>let y = 0</code> <br />
+        <code>while (y <= 10) {</code> <br />
+        <code>console.log(y) y = y + 1</code> <br />
+        <code>}</code><br />
+      </div>
+      <div class="ex">
+        <code>let z = 0</code><br />
+        <code>while (z <= 10) {</code><br />
+        <code>console.log(z)</code><br />
+        <code>z = z + 3</code><br />
+        <code>}</code>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <h2>Estruta de Repetição: do while</h2>
+    <ul>
+      <li>Semelhante ao while, porém a estrutura muda um pouco</li>
+      <li>Este método quase não é utilizado</li>
+    </ul>
+    <div class="ex">
+      <code>let a = 100</code><br /><br />
+      <code>do{ console.log(a/2) </code><br />
+      <code>a = a - 5 </code><br />
+      <code>}while(a >=0)</code>
+    </div>
+    <br />
+    <hr />
+    <h2>Estrutura de repetição: for</h2>
+    <ul>
+      <li>Semelhante ao wile, porém amplamente utilizado</li>
+      <li>Estrutura de repetição mais fácil de compreender</li>
+    </ul>
+  </body>
+</html>
