@@ -43,10 +43,10 @@ if (velocidade2 <= 80) {
 // Praticando
 
 let gender = 'Masculino'
-if(gender == 'Feminino'){
+if (gender == 'Feminino') {
     console.log('OK, vamos utilizar a Fórmula ALFA')
 
-}else{
+} else {
     console.log('Vamos Utilizar a fórmula BETA')
 }
 
@@ -54,25 +54,39 @@ if(gender == 'Feminino'){
 let nome2 = 'Mauricio'
 let idade2 = 35
 
-if(nome != undefined && nome == 'Lucas'){
+if (nome != undefined && nome == 'Lucas') {
     console.log('O Nome está definido')
-}else if(nome == 'Mauricio' && nome.length > 5 && idade2 == 35){
+} else if (nome == 'Mauricio' && nome.length > 5 && idade2 == 35) {
     console.log('O nome é Mauricio')
-}else{
+} else {
     console.log('Não é Mauricio')
 }
 
 // IMC
 let peso1 = 86.9
 let altura1 = 1.7
-let result = peso1/(altura1*altura1)
+let result = peso1 / (altura1 * altura1)
 console.log(result)
-if(result <= 18.6){
+if (result <= 18.6) {
     console.log(`Abaixo do Peso. Seu Imc é de ${result}`)
-}else if(result <=29.9){
+} else if (result <= 29.9) {
     console.log('Peso Normal')
-}else{
+} else {
     console.log('Acima do Peso')
 }
 
 
+
+// switch
+let nome1 = 'Mauricio'
+switch (nome1) {
+    case 'Mauricio':
+        console.log('O nome é Mauricio')
+        break
+    case 'João':
+        console.log('Joao')
+        break
+    default:
+        console.log('Não encontrado')
+        break
+}

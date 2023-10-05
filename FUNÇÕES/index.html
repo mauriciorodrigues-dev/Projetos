@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funções</title>
+    <script src="script.js"></script>
+    <style>
+      code {
+        margin-left: 50px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>O que são Funções?</h2>
+    <ul>
+      <li>
+        Funções são estruturas de códigos menores que são reaproveitados durante
+        a execução/construção de um programa
+      </li>
+      <li>Principal objetivo: poupar repetição de código</li>
+      <li>Podem ser consideradas 'subprogramas'</li>
+    </ul>
+    <h2>Definindo uma função</h2>
+    <ul>
+      <li>Uma função tem uma estrutura um pouco mais complexa</li>
+      <li>Devemos declarar a função sempre com a palavra 'function'</li>
+      <li>Uma função deve ter um nome</li>
+      <li>Pode conter argumentos/parametros, definidos entre ()</li>
+      <li>O corpor da função é definido entre {}</li>
+      <li>Geralmente uma função retorna um valor</li>
+      <li>É psssível declarar funções em variáveis</li>
+    </ul>
+    <h3>Exemplos</h3>
+    <p>Função sem argumentos</p>
+    <code>function imprimirNoConsole() {</code><br />
+    <code>console.log('Olá Mundo')</code><br />
+    <code>}</code><br /><br />
+
+    <code>imprimirNoConsole()</code><br /><br />
+    <p>Função com argumentos</p>
+    <code>function imprimirUmNumero(num){</code><br />
+    <code>console.log('O número é: ' + num)</code><br />
+    <code>}</code><br />
+
+    <code>imprimirUmNumero(2)</code><br />
+    <code>imprimirUmNumero(4)</code><br />
+    <code>imprimirUmNumero(5)</code><br /><br />
+    <p>Função Anônima atrelada a uma variável</p>
+    <code>const numeroAleatorio = function(){</code><br>
+        <code>console.log(Math.random())</code><br>
+    
+    <code>}</code><br><br>
+    
+    <code>numeroAleatorio()</code><br>
+    <code>numeroAleatorio()</code><br><br>
+    <hr>
+    <h2>Mais Sobre função</h2>
+  </body>
+</html>

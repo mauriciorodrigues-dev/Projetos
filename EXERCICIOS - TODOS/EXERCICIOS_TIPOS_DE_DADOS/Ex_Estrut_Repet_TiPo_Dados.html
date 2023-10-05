@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício</title>
+    <style>
+      h1{
+        text-align: center;
+      }
+      code {
+        margin-left: 50px;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+      }
+    </style>
+    <script>
+      // Exercício 13
+    let num = 2
+    let divisoes = 0
+    for(let i = 1; i <= num; i++){
+      if(num % i == 0){
+        divisoes++
+      }
+    }
+
+    if(divisoes==2){
+      console.log(`O número ${num} é primo`)
+    }else{
+      console.log(`O número ${num} não é primo`)
+    }
+    </script>
+  </head>
+  <body>
+    <h1>
+      Exercícios sobre estruturas de fluxos, de repetição e tipos de dados.
+    </h1>
+    <h2>Exercício 06</h2>
+    <ul>
+      <li>
+        Armazene em valores em variáveis com cada um dos tipos de dados vistos,
+      </li>
+      <li>String, Number e Boolean</li>
+    </ul>
+    <h3>Resposta</h3>
+    <code>let nome = "Mauricio";</code><br />
+    <code>let idade = 35;</code><br />
+    <code>let teste = true;</code><br /><br />
+
+    <code>console.log(typeof(nome))</code><br />
+    <code>console.log(typeof(idade))</code><br />
+    <code>console.log(typeof(teste))</code><br /><br />
+    <hr />
+    <h2>Exercício 07</h2>
+    <ul>
+      <li>
+        Crie uma estrutura if que verifica a entrada na balada, se tiver mais de
+        18 anos, pode entrar
+      </li>
+      <li>Armazenar a idade em uma variável com let</li>
+      <li>
+        Insira uma instrução console.log('Pode entrar'), caso a pessoa tenha
+        mais que 18 anos.
+      </li>
+    </ul>
+    <h3>Resposta</h3>
+    <code>let usuario = "Jose";</code><br />
+    <code>let age = 18;</code><br />
+    <code>if (age >= 18) {</code><br /><br />
+    <code>console.log("Pode Entrar, " + usuario);</code><br />
+    <code>} else {</code><br />
+    <code>console.log(</code><br />
+    <code>usuario + ", você é menor de idade. Portanto, não pode entrar"</code
+    ><br />
+    <code>);</code><br />
+    <code>}</code><br /><br />
+    <hr />
+    <h2>Exercício 08</h2>
+    <ul>
+      <li>Crie uma constante com o seu nome como valor</li>
+      <li>
+        Depois uma estrutura if que verifica se o seu nome é o que está na
+        constante
+      </li>
+      <li>Se estiver, emita uma mensagem de saudação com console.log()</li>
+    </ul>
+    <h3>Resposta</h3>
+    <code>const nome = "Mauricio";</code><br /><br />
+    <code>if (nome == "Mauricio") {</code><br />
+    <code>console.log("Seja Bem-vindo, " + nome);</code><br />
+    <code>} else {</code><br />
+    <code>console.log("Usuário não encontrado/cadastrado!");</code><br />
+    <code>}</code><br /><br />
+    <hr />
+    <h2>Exercício 09</h2>
+    <ul>
+      <li>A função Math.pow() exibe a potência de um número</li>
+      <li>
+        Teste a função com console.log() e as seguintes bases: 2, 3, 18 e o
+        expoente deve ser 2
+      </li>
+      <li>Receba 2 argumentos, base e expoente</li>
+      <li>Ex: Math.pow(5,3)</li>
+    </ul>
+    <h3>Resposta</h3>
+    <code>const num = 18;</code><br /><br />
+
+    <code>console.log(Math.pow(2, 2));</code><br />
+    <code>console.log(Math.pow(3, 2));</code><br />
+    <code>console.log(Math.pow(num, 2));</code><br /><br />
+    <hr />
+    <h2>Exercício 10</h2>
+    <ul>
+      <li>
+        Armazene a velocidade de um carro em uma variável com o número que
+        desejar
+      </li>
+      <li>
+        Faça uma estrutura if/else que verifica se ele está acima da velocidade
+      </li>
+      <li>Sendo que a velocidade máxima permitida é de 80km/h</li>
+      <li>Se estiver acima ou abaixo, exiba mensagens com o console.log</li>
+    </ul>
+    <h3>Resposta</h3>
+    <code>let velocidade = 91;</code><br />
+    <code>let velPermitida = 80;</code><br /><br />
+
+    <code>if(velocidade > velPermitida){</code><br />
+    <code>console.log('Você foi multado')</code><br />
+    <code>}else{</code><br />
+    <code>console.log('Prossiga!')</code><br />
+    <code>}</code><br /><br />
+    <hr />
+    <h2>Exercício 11</h2>
+    <ul>
+      <li>
+        Faça uma estrutura if/else para verificar se um usuário pode dirigir
+      </li>
+      <li>
+        Armazene em variáveis algumas informações sobre o usuário: idade e se
+        tem CNH
+      </li>
+      <li>
+        Se a idade for maior que 18 anos e não possuir CNH, exiba uma mensagem.
+      </li>
+      <li>Se a idade for maior que 18 e tem CNH, exiba uma mensagem</li>
+      <li>Se nao tiver 18 e nem CNH, exiba outra mensagem</li>
+    </ul>
+    <h3>Resposta</h3>
+    <code>let idade = 18</code><br />
+    <code>let cnh = false</code><br /><br />
+
+    <code>if(idade >=18 && cnh == true){</code><br />
+    <code>console.log('Ok, pode dirigir')</code><br />
+    <code>}else if(idade >= 18 && cnh == false){</code><br />
+    <code>console.log('Não pode dirigir, mas pode tirar a CNH')</code><br />
+    <code>}else{</code><br />
+    <code>console.log('Ok, pode dirigir')</code><br />
+    <code>}</code><br /><br />
+    <hr />
+    <h2>Exercício 12</h2>
+    <ul>
+      <li>Escreva um loop while que exibe números de 0 a 10 no console</li>
+    </ul>
+    <h3>Resposta</h3>
+    <code>let i = 0;</code><br /><br />
+
+    <code>while(i <= 10) {</code><br />
+    <code>console.log(i);</code><br />
+    <code>i++;</code><br />
+    <code>}</code><br /><br />
+    <hr />
+    <h2>Exercício 13</h2>
+    <ul>
+      <li>Escreva um loop for que exibe números de 100 a 50 no console</li>
+    </ul>
+    <h3>Resposta</h3>
+    <code>for(let i = 100; i >= 50; i--){</code><br />
+    <code>console.log( 'O número é: '+i)</code><br />
+    <code>}</code><br /><br />
+    <hr />
+    <h2>Exercício 14</h2>
+    <ul>
+      <li>
+        Escreva um loop for ou while que exiba qual número é par e qual número é
+        ímpar
+      </li>
+      <li>O contador deve iniciar em 0 e ir até 50</li>
+    </ul>
+    <h3>Resposta</h3>
+    <code>for (let i = 0; i <= 50; i++) {</code><br>
+      <code>if (i % 2 == 0) {</code><br>
+        <code>console.log(i + " é par");</code><br>
+      <code>} else {</code><br>
+        <code>console.log(i + " é ímpar");</code><br>
+      <code>}</code><br>
+    <code>}</code><br><br>
+    <hr>
+    <h2>Exercício 15 - Desafio</h2>
+    <ul>
+      <li>Verifique se o número é primo</li>
+      <li>Um número primo é um número natural, maior que 1 e apenas divisível por si próprio e por 1.</li>
+    </ul>
+    <h3>Resposta</h3>
+    <code>let num = 2</code><br>
+    <code>let divisoes = 0</code><br><br>
+    <code>for(let i = 1; i <= num; i++){</code><br>
+      <code>if(num % i == 0){</code><br>
+        <code>divisoes++</code><br>
+      <code>}</code><br>
+    <code>}</code><br><br>
+
+    <code>if(divisoes==2){</code><br>
+      <code>console.log(`O número ${num} é primo`)</code><br>
+    <code>}else{</code><br>
+      <code>console.log(`O número ${num} não é primo`)</code><br>
+    <code>}</code><br><br>
+    <hr>
+  </body>
+</html>
